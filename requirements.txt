@@ -37,7 +37,7 @@ tifffile==2021.11.2
 tomli==1.2.2
 torch==1.7.1+cpu
 torchvision==0.8.2+cpu
-tqdm==4.62.3
+tqdm==4.48.2
 typing-extensions==4.0.0
 urllib3==1.26.7
 waitress==2.0.0
