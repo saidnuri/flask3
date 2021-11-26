@@ -38,4 +38,5 @@ typing-extensions
 urllib3
 waitress
 Werkzeug
+gunicorn
 
