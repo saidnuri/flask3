@@ -26,7 +26,7 @@ PyMatting==1.1.4
 pyparsing==3.0.6
 python-dateutil==2.8.2
 PyWavelets==1.2.0
-rembg==1.0.27
+rembg==1.0.26
 requests==2.26.0
 scikit-image==0.18.3
 scipy==1.7.3
