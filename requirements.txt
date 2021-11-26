@@ -30,7 +30,7 @@ PyWavelets==1.2.0
 rembg==1.0.14
 requests==2.26.0
 scikit-image==0.18.3
-scipy==1.7.3
+scipy
 setuptools-scm==6.3.2
 six==1.16.0
 tifffile==2021.11.2
