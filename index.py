@@ -1,11 +1,11 @@
 from flask import Flask
-import numpy as np
+
 import os
 from flask import Flask, flash, request, redirect, url_for
 from werkzeug.utils import secure_filename
 from flask.templating import render_template
 from PIL import Image
-from rembg.bg import remove
+
 import numpy as np
 import io
 from PIL import Image
@@ -41,7 +41,7 @@ def index():
             filename = secure_filename(file.filename)
             filename = filename.split('.')[0]+".png"
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-            extract_background(filename)
+            siyah_beyaz_kaydet(filename)
             return redirect(url_for('uploaded_file',filename=filename))
         
     return render_template('index.html')
@@ -57,8 +57,4 @@ def siyah_beyaz_kaydet(isim: str):
     gray = file.convert('L')
     file = gray.point(lambda x: 0 if x<128 else 255, '1') 
     file.save(isim)
-def extract_background(file_name):
-    f = np.fromfile("uploads/"+file_name)
-    result = remove(f)
-    img = Image.open(io.BytesIO(result)).convert("RGBA")
-    img.save(os.path.join(app.config['UPLOAD_FOLDER'], file_name))
+

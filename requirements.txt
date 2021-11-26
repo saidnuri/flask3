@@ -26,7 +26,6 @@ PyMatting
 pyparsing
 python-dateutil
 PyWavelets
-rembg
 requests
 scikit-image
 scipy
@@ -34,8 +33,6 @@ setuptools-scm
 six
 tifffile
 tomli
-torch==1.6.0
-torchvision
 tqdm
 typing-extensions
 urllib3
