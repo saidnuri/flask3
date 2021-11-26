@@ -39,9 +39,8 @@ def index():
             return redirect(request.url)
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
-            filename = filename.split('.')[0]+".png"
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-            siyah_beyaz_kaydet(filename)
+            siyah_beyaz_kaydet("uploads/"+filename)
             return redirect(url_for('uploaded_file',filename=filename))
         
     return render_template('index.html')
