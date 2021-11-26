@@ -19,7 +19,7 @@ MarkupSafe==2.0.1
 matplotlib==3.5.0
 networkx==2.6.3
 numba==0.54.1
-numpy==1.20.0
+numpy
 opencv-python==4.5.4.60
 packaging==21.3
 Pillow==8.4.0
@@ -40,6 +40,6 @@ torchvision==0.8.2+cpu
 tqdm==4.48.2
 typing-extensions==4.0.0
 urllib3==1.26.7
-waitress==2.0.0
+waitress
 Werkzeug==2.0.2
 
