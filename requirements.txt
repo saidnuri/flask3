@@ -35,7 +35,7 @@ setuptools-scm
 six
 tifffile
 tomli
-torch
+torch==1.6.0
 torchvision
 tqdm
 typing-extensions
