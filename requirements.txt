@@ -1,4 +1,3 @@
--f https://download.pytorch.org/whl/torch_stable.html
 certifi
 charset-normalizer
 click
@@ -9,14 +8,10 @@ filetype
 Flask
 fonttools
 hsh
-idna
-imageio
 itsdangerous
 Jinja2
-kiwisolver
 llvmlite
 MarkupSafe
-matplotlib
 networkx
 numba
 numpy
@@ -27,16 +22,6 @@ pyparsing
 python-dateutil
 PyWavelets
 requests
-scikit-image
-scipy
-setuptools-scm
-six
-tifffile
-tomli
-tqdm
-typing-extensions
-urllib3
 waitress
-Werkzeug
 gunicorn
 
