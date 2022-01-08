@@ -24,4 +24,5 @@ PyWavelets
 requests
 waitress
 gunicorn
+pytube
 
