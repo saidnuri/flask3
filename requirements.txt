@@ -25,4 +25,4 @@ requests
 waitress
 gunicorn
 pytube
-
+youtube-search-python
