@@ -17,9 +17,9 @@ def snc(search:str):
     dict=videosSearch.result()
     den=json.dumps(dict,indent=1)
     return den
-@app.route('/ytb_video/<string:link>')
-def get_video(link:str):
-    yt = YouTube(link)
+@app.route('/ytb_video/<string:id>')
+def get_video(id:str):
+    yt = YouTube('http://youtube.com/watch?v='+str(id))
     linker = {"Linkler": [yt.streams.get_highest_resolution().url, yt.streams.get_lowest_resolution().url],
               "kaliteler:": [yt.streams.get_highest_resolution().resolution,
                              yt.streams.get_lowest_resolution().resolution]}
