@@ -8,17 +8,13 @@ app = Flask(__name__)
 
 @app.route('/<string:name>')
 def index(name:str):
-   url = "https://youtube-mp3-download1.p.rapidapi.com/dl"
-
+        url = "https://youtube-mp3-download1.p.rapidapi.com/dl"
 	querystring = {"id": name}
-
 	headers = {
 		"X-RapidAPI-Host": "youtube-mp3-download1.p.rapidapi.com",
 		"X-RapidAPI-Key": "529e3f03c0msh06af56ae5d4985dp153eeejsna77eac11e459"
 	}
-
 	response = requests.request("GET", url, headers=headers, params=querystring)
-
 	return (response.json()["link"])
 @app.route('/snc/<string:search>')
 def snc(search:str):
