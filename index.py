@@ -12,9 +12,9 @@ def index(name:str):
     url = "https://youtube-mp3-download1.p.rapidapi.com/dl"
     querystring = {"id": str(name)}
     headers = {
-		"X-RapidAPI-Host": "youtube-mp3-download1.p.rapidapi.com",
-		"X-RapidAPI-Key": "529e3f03c0msh06af56ae5d4985dp153eeejsna77eac11e459"
-	}
+	"X-RapidAPI-Host": "youtube-mp36.p.rapidapi.com",
+	"X-RapidAPI-Key": "529e3f03c0msh06af56ae5d4985dp153eeejsna77eac11e459"
+}
     response = requests.request("GET", url, headers=headers, params=querystring)
     return (response.json()["link"])
 @app.route('/snc/<string:search>')
