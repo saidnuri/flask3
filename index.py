@@ -14,7 +14,7 @@ def index(name:str):
     # Add all the available extractors
     ydl.add_default_info_extractors()
 
-    result = ydl.extract_info('https://www.youtube.com/watch?v=89kTb73csYg'
+    result = ydl.extract_info('https://www.youtube.com/watch?v='+str(name)
                               , download=False  # We just want to extract the info
                               )
 
